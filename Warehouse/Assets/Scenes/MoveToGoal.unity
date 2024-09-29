@@ -246,8 +246,8 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
-  goal: {fileID: 0}
+  MaxStep: 5000
+  goal: {fileID: 1932547124}
 --- !u!114 &374906301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,7 +598,7 @@ GameObject:
   - component: {fileID: 1932547121}
   - component: {fileID: 1932547125}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -684,7 +684,7 @@ Transform:
   m_GameObject: {fileID: 1932547120}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.55, z: -24.88}
+  m_LocalPosition: {x: 0, y: 2.55, z: -24.85}
   m_LocalScale: {x: -40.25, y: 5, z: 9.58}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1042,8 +1042,6 @@ GameObject:
   - component: {fileID: 6697621764825190760}
   - component: {fileID: 882129738867367551}
   - component: {fileID: 1240629564}
-  - component: {fileID: 6697621764825190762}
-  - component: {fileID: 6697621764825190761}
   m_Layer: 0
   m_Name: Plane.001
   m_TagString: Untagged
@@ -1094,30 +1092,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5148817237627740717}
   m_Mesh: {fileID: 4579454407841743219, guid: 2c7a44af3c0331948954f33da27e22c2, type: 3}
---- !u!114 &6697621764825190761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5148817237627740717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52e817cc414964c40aa4d79dc8ae145a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6697621764825190762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5148817237627740717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52e817cc414964c40aa4d79dc8ae145a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &7762067043456426795
 MeshRenderer:
   m_ObjectHideFlags: 0

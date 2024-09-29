@@ -10,6 +10,11 @@ public class MoveToGoal : Agent
 
     [SerializeField] private Transform goal;
 
+    public override void OnEpisodeBegin()
+    {
+        transform.localPosition = new Vector3(0, 0.5f, 0);
+    }
+
     public override void CollectObservations(VectorSensor sensor)
     {
         sensor.AddObservation(transform.localPosition);
@@ -20,15 +25,11 @@ public class MoveToGoal : Agent
         float moveX = actions.ContinuousActions[0];
         float moveZ = actions.ContinuousActions[1];
 
-        float moveSpeed = 5f;
+        float moveSpeed = 1f;
 
         transform.localPosition += new Vector3(moveX, 0, moveZ) * Time.deltaTime * moveSpeed;
     }
 
-    public override void OnEpisodeBegin()
-    {
-        transform.localPosition = new Vector3(0, 0.5f, 0);
-    }
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
@@ -49,7 +50,5 @@ public class MoveToGoal : Agent
             SetReward(-1f);
             EndEpisode();
         }
-        SetReward(1f);
-        EndEpisode();
     }
 }
